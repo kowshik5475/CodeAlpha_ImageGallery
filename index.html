@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Hero -->
+    <header class="hero">
+      <h1 class="hero-title">Image Gallery</h1>
+      <p class="hero-subtitle">Discover and explore amazing photos through a clean, interactive gallery.</p>
+      <div class="hero-stats">
+        <span><strong id="statImages"></strong> Images</span>
+        <span><strong id="statCategories"></strong> Categories</span>
+        <span><strong>Responsive</strong> Design</span>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="searchInput" class="search-input" type="text" placeholder="Search images by name or category…" />
+      <button id="searchClear" class="search-clear" style="display:none;" title="Clear search">✕</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="cities">Cities</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <!-- Stats -->
+    <p class="stats-label" id="statsLabel"></p>
+
+    <!-- Gallery -->
+    <div class="gallery-grid" id="galleryGrid"></div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="emptyState" style="display:none;">No images match your search.</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <strong>Image Gallery</strong>
+      <span>Built with HTML, CSS and JavaScript</span>
+    </footer>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">&times;</button>
+    <span class="lb-counter" id="lbCounter"></span>
+    <button class="lb-nav lb-prev" id="lbPrev">&#10094;</button>
+    <div class="lb-content">
+      <img id="lbImg" src="" alt="" />
+      <div class="lb-caption">
+        <span class="lb-title" id="lbTitle"></span>
+        <span class="badge" id="lbBadge"></span>
+      </div>
+    </div>
+    <button class="lb-nav lb-next" id="lbNext">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
