@@ -1,5 +1,5 @@
 const images = [
-  { title: "Forest Stream",    category: "nature",  src: "https://picsum.photos/id/10/1200/900",   thumb: "https://picsum.photos/id/10/600/450"   },
+  { title: "Forest Stream",    category: "nature",  src: "https://images.pexels.com/photos/20581269/pexels-photo-20581269.jpeg",   thumb:"https://images.pexels.com/photos/20581269/pexels-photo-20581269.jpeg"   },
   { title: "Mountain Lake",    category: "nature",  src: "https://picsum.photos/id/1015/1200/900", thumb: "https://picsum.photos/id/1015/600/450"  },
   { title: "Autumn Path",      category: "nature",  src: "https://picsum.photos/id/1035/1200/900", thumb: "https://picsum.photos/id/1035/600/450"  },
   { title: "Green Hills",      category: "nature",  src: "https://picsum.photos/id/137/1200/900",  thumb: "https://picsum.photos/id/137/600/450"   },
